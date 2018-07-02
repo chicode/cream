@@ -1,0 +1,27 @@
+{
+  "name": "cream",
+  "version": "1.0.0",
+  "description": "The Chicode Remote Execution Action Mainframe.",
+  "main": "server.js",
+  "dependencies": {
+    "dockerode": "^2.5.5",
+    "express": "^4.16.3",
+    "simple-dockerode": "^0.2.2",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chicode/cream.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chicode/cream/issues"
+  },
+  "homepage": "https://github.com/chicode/cream#readme"
+}
