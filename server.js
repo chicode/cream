@@ -28,12 +28,11 @@ function runExec(container, command, callback) {
 	    
 	    var chunks = []
 	    stream.on('data', function(chunk) {
-		chunks.push(chunk.toString().replace(/[^ -~]+/g, ""))
+		chunks.push(chunk.toString().replace(/[^ -~\n]+/g, ""))
 	    })
 	    
 	    stream.on('end', function() {
-		console.log(chunks)
-		callback(chunks[chunks.length - 1])
+		callback(chunks.join("\n").split('\n'))
 	    })
 	});
     });
